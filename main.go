@@ -33,7 +33,7 @@ func main() {
 	cool = 20 // re assignment with =
 	fmt.Println("Cool with new assignment is:", cool)
 
-	// exit
+	// print exit
 	tight()
 }
 
