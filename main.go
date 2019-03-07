@@ -27,7 +27,7 @@ func main() {
 	n, _ := fmt.Print("Let's see how many bytes this sentence is: ")
 	fmt.Println(n, "!")
 
-	// declare a new var with :=
+	// declare a new var and assign with :=
 	cool := 10
 	fmt.Println("Cool is:", cool)
 	cool = 20 // re assignment with =
