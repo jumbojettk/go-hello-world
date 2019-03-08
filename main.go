@@ -3,10 +3,44 @@ package main
 // import pkgs
 import "fmt"
 
+// declaring with var and default values
+var globalDec = 7
+var globalDecDefaultInt int
+var globalDecDefaultStr string
+
+// declaring new type
+type dope int
+
+var nice dope
+
 func main() {
 	fmt.Println("Uh Suhhh!")
 	fmt.Println("I'm Jett, and I'm", 25, "years old!")
 	lit()
+
+	// exploring declaration with var
+	fmt.Println("The gobalDec var is:", globalDec)
+	fmt.Println("The gobalDecDefaultInt without assignment is:", globalDecDefaultInt)
+	fmt.Println("The gobalDecDefaultStr without assignment is:", globalDecDefaultStr, "\t(should be an empty string)")
+
+	// exploring Printf, template string
+	// %T is type of the variable and \n for newline
+	globalDecDefaultInt = 77
+	globalDecDefaultStr = "Everything is awesome! Every situation is a lituation!"
+	fmt.Printf("globalDecInt, value is %v, type is: %T\n", globalDecDefaultInt, globalDecDefaultInt)
+	fmt.Printf("globalDecStr, value is %v, type is: %T\n", globalDecDefaultStr, globalDecDefaultStr)
+
+	// exploring type
+	nice = 10
+	fmt.Printf("The variable nice has value of %v, and type of %T\n", nice, nice)
+
+	// since globalDec = nice will not work due to diff types
+	// converting the type "dope" to "int" (not called casting)
+	globalDec = int(nice)
+	fmt.Printf("The variable gobalDec should now have value of nice, has value of %v, and type of %T\n", globalDec, globalDec)
+
+	// using string literals
+	fmt.Println(`This is a literal string with "another string inside with quotes"`)
 
 	fmt.Println("Bouta print \"lit\" during \"even\" and running 77 times!")
 
