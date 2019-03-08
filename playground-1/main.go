@@ -40,7 +40,7 @@ func main() {
 	fmt.Printf("The variable gobalDec should now have value of nice, has value of %v, and type of %T\n", globalDec, globalDec)
 
 	// using string literals
-	fmt.Println(`This is a literal string with "another string inside with quotes"`)
+	fmt.Println(`This is a literal string with "another string inside with quotes" it even prints \t and \n`)
 
 	fmt.Println("Bouta print \"lit\" during \"even\" and running 77 times!")
 
@@ -68,7 +68,7 @@ func main() {
 	fmt.Println("Cool with new assignment is:", cool)
 
 	// print exit
-	tight()
+	baii()
 }
 
 func lit() {
