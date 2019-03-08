@@ -10,11 +10,10 @@ const (
 )
 
 const (
-	_          = iota
-	nextYear   = 2019 + iota
-	next2Years = 2019 + iota
-	next3Years = 2019 + iota
-	next4Years = 2019 + iota
+	nextYear   = 2020 + iota
+	next2Years = 2020 + iota
+	next3Years = 2020 + iota
+	next4Years = 2020 + iota
 )
 
 func main() {
