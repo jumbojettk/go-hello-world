@@ -53,7 +53,7 @@ func main() {
 		last: "Krassner",
 		size: 4,
 	}
-	// print anonymouse type struct
+	// print anonymous type struct
 	fmt.Printf(" Last: %v\n Size: %v\n Type: %T\n", fam.last, fam.size, fam)
 
 }
