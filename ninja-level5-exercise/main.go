@@ -54,15 +54,15 @@ func main() {
 	// Print out the values, ranging over the elements in the slice which stores the favorite flavors.
 	fmt.Println("Name:", p1.firstName, p1.lastName)
 	fmt.Print("Favorite Ice Cream Flavs: ")
-	for _, v := range p1.favIceCream {
-		fmt.Print(v)
+	for i, v := range p1.favIceCream {
+		fmt.Print(i, v)
 	}
 	fmt.Println()
 
 	fmt.Println("Name:", p2.firstName, p2.lastName)
 	fmt.Print("Favorite Ice Cream Flavs: ")
-	for _, v := range p2.favIceCream {
-		fmt.Print(v)
+	for i, v := range p2.favIceCream {
+		fmt.Print(i, v)
 	}
 	fmt.Println()
 
@@ -91,7 +91,7 @@ func main() {
 	// using a composite literal, create a value of type truck and assign values to the fields
 	monster := truck{
 		vehicle: vehicle{
-			doors: 5,
+			doors: 2,
 			color: "red",
 		},
 		fourWheel: true,
