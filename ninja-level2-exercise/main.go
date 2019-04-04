@@ -9,6 +9,7 @@ const (
 	b int = 8
 )
 
+//
 const (
 	nextYear   = 2020 + iota
 	next2Years = 2020 + iota
@@ -72,6 +73,10 @@ func main() {
 	// ******************** EXERCISE 6 ********************
 	fmt.Println("******************** EXERCISE 6 ********************")
 	fmt.Printf("Next Year: %v\nNext 2 Years: %v\nNext 3 Years: %v\nNext 4 Years: %v\n", nextYear, next2Years, next3Years, next4Years)
+
+	// iota and bit shifting
+
+	// storing multiple values in an int to determine multiple conditions
 
 	fmt.Println("******************** End EXERCISE 6 ********************")
 }
