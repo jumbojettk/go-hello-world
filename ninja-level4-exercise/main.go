@@ -86,7 +86,9 @@ func main() {
 
 	fmt.Println("******************** EXERCISE 6 ********************")
 	// Create a slice to store the names of all of the states in the United States of America.
-	xs := []string{` Alabama`, ` Alaska`, ` Arizona`, ` Arkansas`,
+	// use make to create a slice with the known size and cap
+	xs := make([]string, 50, 50)
+	xs = []string{` Alabama`, ` Alaska`, ` Arizona`, ` Arkansas`,
 		` California`, ` Colorado`, ` Connecticut`, ` Delaware`,
 		` Florida`, ` Georgia`, ` Hawaii`, ` Idaho`, ` Illinois`,
 		` Indiana`, ` Iowa`, ` Kansas`, ` Kentucky`, ` Louisiana`,
