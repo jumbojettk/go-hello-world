@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 const (
-	pi = 3.1415
+	pi = math.Pi
 )
 
 // struct with identifier person, or person type struct
@@ -113,6 +114,7 @@ func main() {
 	// use func info to print the area of circle
 	info(cir1)
 
+	fmt.Println(pi)
 	fmt.Println("******************** EXERCISE 6 ********************")
 	// Build and use an anonymous func
 	func(s string) {
@@ -220,7 +222,7 @@ func coolName(fn string, ln string) string {
 	return fn + " " + ln
 }
 
-// func that takes type person struct
+// func that takes a func of fn and ln that returns a string, and a type person struct
 func findInfo(f func(fn string, ln string) string, p person) (string, string) {
 	name := p.first + " " + p.last
 	coolNm := f(p.first, p.last)
