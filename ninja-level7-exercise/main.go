@@ -28,13 +28,19 @@ func main() {
 	}
 
 	// print out the value
-	fmt.Println(sillyDude)
+	fmt.Println("Silly Dude:", sillyDude)
 
 	// call “changeMe”
 	changeMe(&sillyDude)
 
 	// print out the value
-	fmt.Println(sillyDude)
+	fmt.Println("Changed Silly Dude:", sillyDude)
+
+	// call "changeMeh" for kicks using the (*p)
+	changeMeh(&sillyDude)
+
+	// print out the value
+	fmt.Println("Changed-Meh Silly Dude:", sillyDude)
 
 }
 
@@ -42,4 +48,10 @@ func changeMe(p *person) {
 	p.first = "Jettster" // same as using (*p).first
 	p.last = "Krassnerski"
 	p.age = 25000
+}
+
+func changeMeh(p *person) {
+	(*p).first = "Jettie"
+	(*p).last = "Krassnie"
+	(*p).age = 2500
 }
