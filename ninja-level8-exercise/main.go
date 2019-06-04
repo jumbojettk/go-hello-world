@@ -192,8 +192,6 @@ func main() {
 
 	// your code goes here
 
-	// lets sort the sayings first
-
 	// sort by age and print nicely
 	sort.Sort(ByAge(users3))
 	fmt.Println(">>>> Sort by Age, Sayings Unsorted <<<<")
