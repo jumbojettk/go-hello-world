@@ -131,6 +131,7 @@ func main() {
 	fmt.Println(users2)
 
 	// your code goes here
+	// os.Stdout = the terminal output, can replaced with a file if wanted to (any writer)
 	err = json.NewEncoder(os.Stdout).Encode(users2)
 	if err != nil {
 		fmt.Println(err)
